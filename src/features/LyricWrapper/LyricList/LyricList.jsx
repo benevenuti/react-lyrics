@@ -8,7 +8,7 @@ const LyricList = props => {
             {props.songList.map( (song, key) => {
                 return (
                     <div key={key}>
-                        <img src={song.album.cover_medium} width={64} alt="cover"/>
+                        <img src={song.album.cover_medium} width={256} alt="cover"/>
                         <button className='-songname'
                             onClick={ () => props.handleMusicSelected(song)}>
                                 {song.artist.name} - {song.title}
